@@ -27,12 +27,18 @@ std::string HotAirBalloon::getColor()
 
 void HotAirBalloon::setAltitude(double altitude)
 {
-  HotAirBalloon::altitude = altitude;
+  // The following two lines do exactly the same thing.
+  //
+  // I am listing them both to show you that they both are legal C++ code, but in real code you wouldn't use both.
+  
+  HotAirBalloon::altitude = altitude;  // This is one way of disambiguating when a local variable and a member variable have the same name
+
+  this->altitude = altitude;           // This is another way
 }
 
 void HotAirBalloon::setColor(std::string updatedColor)
 {
-  color = updatedColor;
+  color = updatedColor;                // The other option is to use a different name for the local variable
 }
 
 
