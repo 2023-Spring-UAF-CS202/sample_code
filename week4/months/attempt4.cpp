@@ -31,11 +31,11 @@ enum month {
 void do_something(int month) {
 
   switch (month) {
-  case month::jan:
+  case jan:
     cout << "January is cold!\n"; break;
-  case month::feb:
+  case feb:
     cout << "February is even colder!\n"; break;
-  case month::mar:
+  case mar:
     cout << "What is March like in Fairbanks?\n"; break;
   default:
     cout << "It's April or later.\n"; break;

@@ -35,6 +35,8 @@ std::ostream& operator<<(std::ostream& os, Month month) {
   
 
 void do_something(Month month) {
+
+  //  <<(cout, month)
   
   switch (month) {
   case Month::jan:
