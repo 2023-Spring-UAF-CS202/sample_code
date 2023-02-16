@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-#include "Shape.h"
+#include "Polygon.h"
 
-class Rectangle : public Shape {
+class Rectangle : public Polygon {
 
  public:
 
@@ -25,8 +25,12 @@ class Rectangle : public Shape {
   int area() const override {
     return width * height;
   }
+
+  int num_sides() const override {
+    return 4;
+  }
   
- protected:
+protected:
 
   int width;
   int height;

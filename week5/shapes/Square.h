@@ -13,5 +13,10 @@ class Square : public Rectangle {
     // This space intentionally left blank
   }
 
+  void resize(int new_width) {
+    width = new_width;
+    height = new_width;
+  }
+  
 };
 

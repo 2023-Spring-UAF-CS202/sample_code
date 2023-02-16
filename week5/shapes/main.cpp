@@ -11,16 +11,16 @@ using std::endl;
 
 int main() {
 
-  Rectangle r{10,7};
+  const Rectangle r{10,7};
 
   Square s{5};
 
-  cout << "r: " << r.getWidth() << "," << r.getHeight() << " area=" << r.area() << endl;
+  cout << "r: " << r.getWidth() << "," << r.getHeight() << " area=" << r.area() << " has " << r.num_sides() << " sides" << endl;
 
   cout << "\n" << r << "\n";
 
 
-  cout << "s: " << s.getWidth() << "," << s.getHeight() << " area=" << s.area() << endl;
+  cout << "s: " << s.getWidth() << "," << s.getHeight() << " area=" << s.area() << " has " << s.num_sides() << " sides " << endl;
 
   cout << "\n" << s << "\n";
   
