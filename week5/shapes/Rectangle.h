@@ -14,21 +14,13 @@ class Rectangle : public Polygon {
     // This space intentionally left blank
   }
 
-  int getWidth() const {
-    return width;
-  }
+  int getWidth() const;
 
-  int getHeight() const {
-    return height;
-  }
+  int getHeight() const;
 
-  int area() const override {
-    return width * height;
-  }
+  int area() const override;
 
-  int num_sides() const override {
-    return 4;
-  }
+  int num_sides() const override;
   
 protected:
 
