@@ -31,9 +31,14 @@ int main(int argc, char * * argv) {
     
     ifstream in{args[0]};
 
-    string token;
-    while (in >> token) {
-      cout << token << endl;
+    if (in.fail()) {
+      cerr << "Error opening file " << args[0] << endl;
+      return -1;
+    }
+    
+    int i;
+    while (in >> i) {
+      cout << i << endl;
     }
   }
   
