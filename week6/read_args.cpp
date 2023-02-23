@@ -37,7 +37,18 @@ int main(int argc, char * * argv) {
   // Use of & here is necessary, and
   //   indicates that we are making a reference
   //   rather than making a copy.
-  vector<string> args{&argv[1], &argv[argc]};
+  /*
+  vector<string> args;
+  for (int i=1; i < argc; i+=1) {
+    string arg{argv[i]};
+    args.push_back(arg);
+  }
+  */
+
+  // char * * argv
+  // char * argv[1]
+  vector<string> args{argv+1, argv+argc};
+  //  vector<string> args{&argv[1], &argv[argc]};
 
   // Print the name of the program
   cout << program_name << " ";

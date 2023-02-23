@@ -6,12 +6,14 @@ using std::endl;
 
 // ./array_of_c_strings hi yo
 //
-// argv[0] is "hi"
-// argv[0][0] is 'h'
-// argv[0][1] is 'i'
-// argv[0][2] is 0
+// argv[0] is "./array_of_c_strings"
 //
-// argv[1] is "yo"
+// argv[1] is "hi"
+// argv[1][0] is 'h'
+// argv[1][1] is 'i'
+// argv[1][2] is 0
+//
+// argv[2] is "yo"
 int main(int argc, char * * argv) {
 
   // argv is a number that represents a location in memory
@@ -20,11 +22,14 @@ int main(int argc, char * * argv) {
   //
   // The element at argv[argc - 1 ] is a char * that points to the last C-style string 
   
-  const char * a_string = "hi";
-  const char * b_string = "yo";
-  
+  //  const char * a_string = "hi";
+  //const char * b_string = "yo";
 
+  for (int i{0}; i < argc; i+=1) {
   
+    cout << "argv[" << i << "] is " << argv[i] << endl;
+    
+  }
   
   // Location in memory, let's call it starting_address
   //*
