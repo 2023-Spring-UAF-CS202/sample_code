@@ -11,11 +11,11 @@ using std::map;
 int main() {
 
   map<string, int> hw01_grades {
-				  {"A", 8},
-				  {"B", 5},
+				  {"A", 16},
+				  {"B", 9},
 				  {"C", 0},
 				  {"D", 3},
-				  {"F", 5}
+				  {"F", 8}
   };
 
   for (const auto& [grade, count] : hw01_grades) {
