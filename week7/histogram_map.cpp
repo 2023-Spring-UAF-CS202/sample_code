@@ -18,15 +18,30 @@ int main() {
 				  {"F", 5}
   };
 
-  cout << "There are " << hw01_grades.size() << " elements " << endl;
+  for (const auto& [grade, count] : hw01_grades) {
 
-  cout << "There are " << hw01_grades["A"] << " A grades in HW01" << endl;
-
-  for (string grade : _______ ) {
-
-    cout << grade << ": " << hw01_grades[grade] << endl;
+    cout << grade << ": " << count << endl;
     
   }
+  
+
+  /* C++ 11 allows the following:
+
+  for (const auto& key_value_pair : hw01_grades) {
+    std::cout << key_value_pair.first << ": " << key_value_pair.second << endl;
+  }
+
+  */
+  
+  /* OLD SCHOOL WAY:
+
+  for (map<string, int>::const_iterator it = hw01_grades.begin();
+       it != hw01_grades.end(); it++) {
+
+    std::cout << it->first << ": " << it->second << endl;
+  }
+ 
+  */
   
   return 0;
 }
