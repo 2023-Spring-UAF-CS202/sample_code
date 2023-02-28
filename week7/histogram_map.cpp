@@ -20,6 +20,13 @@ int main() {
 
   cout << "There are " << hw01_grades.size() << " elements " << endl;
 
+  cout << "There are " << hw01_grades["A"] << " A grades in HW01" << endl;
+
+  for (string grade : _______ ) {
+
+    cout << grade << ": " << hw01_grades[grade] << endl;
+    
+  }
   
   return 0;
 }
