@@ -18,9 +18,17 @@ int main() {
 				  {"F", 8}
   };
 
+  // C++ 17 and later
+  //
   for (const auto& [grade, count] : hw01_grades) {
 
-    cout << grade << ": " << count << endl;
+    cout << grade << ": ";
+
+    for (int i{0}; i<count; i+=1) {
+      cout << "#";
+    }
+
+    cout << endl;
     
   }
   
