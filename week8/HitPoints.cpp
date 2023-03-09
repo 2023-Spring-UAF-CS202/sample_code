@@ -56,6 +56,17 @@ public:
   bool closeToDeath() {
     // We can use the -> notation instead of a dot
     //   to access members of the object that a pointer is referring to
+
+    // this->value is saying the following
+    //
+    // this is an address in memory
+    // at that address, there is a HitPoints object
+    // HitPoints objects have a member variable called value
+    //
+    // this->value refers to the value member variable
+    //                    for the HitPoints object
+    //                    at the address stored in this
+
     if (this->value < 3) {
       return true;
     } else {
@@ -84,6 +95,15 @@ int main() {
 
   HitPoints h{10};
 
+  HitPoints * address_of_h = &h;
+
+  cout << address_of_h->getCurrent() << endl;
+
+  cout << h.getCurrent() << endl;
+
+  void * pointer_to_uncharted_territory = address_of_h + 1287498;
+  
+  
   cout << h-- << endl;
   /*  
       Doing the above is like doing this:
