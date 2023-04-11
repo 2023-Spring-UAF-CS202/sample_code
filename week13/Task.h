@@ -10,6 +10,8 @@ class Task {
   Task(std::string message);
   ~Task();
 
+  void addTask(std::string message);
+  
   std::string message;
   Task* nextTask;
 

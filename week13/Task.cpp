@@ -10,7 +10,22 @@ Task::Task(std::string m)
 
 
 Task::~Task() {
+  std::cerr << "Calling Task destructor" << std::endl;
+
+  delete nextTask; // delete the memory pointed to by nextTask
+
+  // delete nextTask; // DO NOT DO THIS
+  
   std::cerr << "Called Task destructor" << std::endl;
 }
+
+void Task::addTask(std::string message) {
+
+  this->nextTask = new Task{message};
+
+}
+
+
+
 
 
