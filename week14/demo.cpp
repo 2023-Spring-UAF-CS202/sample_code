@@ -30,6 +30,12 @@ void evenPrimeNumbers(int i) {
   }
 }
 
+void oddNumber(int i) {
+  if (i % 2 != 0) {
+    std::cout << i << " is an odd number" << std::endl;
+  }
+}
+
 
 int main() {
 
@@ -37,5 +43,7 @@ int main() {
 
   demo.processEachElement(evenPrimeNumbers);
 
+  demo.processEachElement(oddNumber);
+  
   return 0;
 }
