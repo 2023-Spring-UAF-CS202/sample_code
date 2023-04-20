@@ -1,3 +1,6 @@
+// Example code modified from question at
+// https://stackoverflow.com/questions/9322253/can-functions-accept-abstract-base-classes-as-arguments
+
 #include <iostream>
 
 using std::cout;
