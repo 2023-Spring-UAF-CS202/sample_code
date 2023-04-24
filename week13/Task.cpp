@@ -21,9 +21,10 @@ Task::~Task() {
 
 void Task::addTask(std::string message) {
 
-  this->nextTask = new Task{message};
+  nextTask = new Task{message};
 
 }
+
 
 
 

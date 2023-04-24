@@ -11,6 +11,10 @@ int main() {
   */
   
   firstTask.addTask("Look for monsters");
+
+  cout << (*(firsttask.nextTask)).message << endl;
+
+  cout firstTask.nextTask->message
   
 
   /*

@@ -5,4 +5,7 @@ all: read_args
 
 
 clean:
-	rm -f read_args *.o *~
+	rm -f read_args read_file write_file *.o *~
+
+
+.PHONY: clean all
